@@ -1,15 +1,15 @@
 {
-  "name": "node-steam-controller",
-  "version": "0.1.2",
-  "description": "Steam controller input events for Node",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": "westhom/node-steam-controller",
-  "author": "Wes Thom",
-  "license": "MIT",
-  "dependencies": {
-    "node-hid": "^0.5.2"
-  }
+    "name": "node-steam-controller",
+    "version": "0.1.2",
+    "description": "Steam controller input events for Node",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": "westhom/node-steam-controller",
+    "author": "Wes Thom",
+    "license": "MIT",
+    "dependencies": {
+        "node-hid": "^0.7.3"
+    }
 }
