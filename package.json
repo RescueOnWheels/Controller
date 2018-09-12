@@ -1,15 +1,25 @@
 {
-    "name": "node-steam-controller",
-    "version": "0.1.2",
-    "description": "Steam controller input events for Node",
-    "main": "index.js",
-    "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1"
-    },
-    "repository": "westhom/node-steam-controller",
-    "author": "Wes Thom",
-    "license": "MIT",
-    "dependencies": {
-        "node-hid": "^0.7.3"
-    }
+  "name": "controller",
+  "version": "1.0.0",
+  "description": "Easy input events from your Steam Controller for Mac, Windows, and Linux.",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RescueOnWheels/Controller.git"
+  },
+  "author": "RescueOnWheels",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/RescueOnWheels/Controller/issues"
+  },
+  "homepage": "https://github.com/RescueOnWheels/Controller#readme",
+  "dependencies": {
+    "node-hid": "0.7.3"
+  }
 }
