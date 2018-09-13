@@ -2,7 +2,7 @@ const SteamController = require('./../');
 
 const controller = new SteamController();
 
-controller.ltrigger.on('move', (event) => {
+controller.rpad.on('move', (event) => {
   const json = JSON.stringify(event, null, 4);
 
   console.log(json);
