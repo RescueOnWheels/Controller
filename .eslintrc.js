@@ -4,7 +4,7 @@ module.exports = {
         "multiline-comment-style": ["error", "starred-block"],
         "no-bitwise": "off",
         "no-console": ["error", {
-            "allow": ["error", "warn"]
+            "allow": ["error", "info", "warn"]
         }],
         "no-mixed-operators": ["error", {
             "groups": [
