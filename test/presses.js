@@ -1,14 +1,15 @@
 const SteamController = require('./../');
 
 const controller = new SteamController();
+
 const presses = [
-  'x',
-  'y',
   'a',
   'b',
+  'x',
+  'y',
+  'prev',
   'home',
-  'back',
-  'forward',
+  'next',
   'ltrigger',
   'rtrigger',
   'lgrip',
@@ -16,13 +17,17 @@ const presses = [
   'lshoulder',
   'rshoulder',
   'stick',
-  // 'lpad',
+  'lpad',
   'rpad',
 ];
 
 presses.forEach((name) => {
   controller[name].on('press', (ev) => {
     console.log(name, 'press', ev);
+  });
+
+  controller[name].on('release', (ev) => {
+    console.log(name, 'release', ev);
   });
 });
 
