@@ -1,6 +1,4 @@
-/* eslint-disable no-console */
-
-const SteamController = require('./');
+const SteamController = require('./../'); // Replace `require('./')` with require('node-steam-controller')
 
 const controller = new SteamController();
 
