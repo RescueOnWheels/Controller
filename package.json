@@ -1,33 +1,34 @@
 {
-    "name": "controller",
-    "version": "1.0.0",
-    "description": "Easy input events from your Steam Controller for Mac, Windows, and Linux.",
-    "main": "index.js",
-    "directories": {
-        "lib": "lib"
-    },
-    "scripts": {
-        "lint": "eslint . --fix",
-        "test": "echo \"Error: no test specified\" && exit 1",
-        "precommit": "npm run lint"
-    },
-    "repository": {
-        "type": "git",
-        "url": "git+https://github.com/RescueOnWheels/Controller.git"
-    },
-    "author": "RescueOnWheels",
-    "license": "GPL-3.0",
-    "bugs": {
-        "url": "https://github.com/RescueOnWheels/Controller/issues"
-    },
-    "homepage": "https://github.com/RescueOnWheels/Controller#readme",
-    "dependencies": {
-        "node-hid": "0.7.3"
-    },
-    "devDependencies": {
-        "eslint": "^5.5.0",
-        "eslint-config-airbnb-base": "^13.1.0",
-        "eslint-plugin-import": "^2.14.0",
-        "husky": "^0.14.3"
-    }
+  "name": "controller",
+  "version": "1.0.0",
+  "description": "Easy input events from your Steam Controller for Mac, Windows, and Linux.",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  },
+  "scripts": {
+    "lint": "eslint . --fix",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "precommit": "npm run lint"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RescueOnWheels/Controller.git"
+  },
+  "author": "RescueOnWheels",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/RescueOnWheels/Controller/issues"
+  },
+  "homepage": "https://github.com/RescueOnWheels/Controller#readme",
+  "dependencies": {
+    "debug": "4.0.1",
+    "node-hid": "0.7.3"
+  },
+  "devDependencies": {
+    "eslint": "^5.5.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.14.0"
+  }
 }
