@@ -1,8 +1,12 @@
-/*
- *!
+/**
  * node-steam-controller
- * Copyright(c) 2017 Wes Thom
- * MIT Licensed
+ * @author Wes Thom
+ * @license MIT
  */
 
+/**
+ * Controller
+ * @author RescueOnWheels
+ * @license MIT
+ */
 module.exports = require('./lib/controller');
