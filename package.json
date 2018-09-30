@@ -9,7 +9,7 @@
   },
   "scripts": {
     "lint": "eslint . --fix",
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "cross-env DEBUG=* node test/all.js",
     "precommit": "npm run lint"
   },
   "repository": {
@@ -27,6 +27,7 @@
     "node-hid": "0.7.3"
   },
   "devDependencies": {
+    "cross-env": "^5.2.0",
     "eslint": "^5.5.0",
     "eslint-config-airbnb-base": "^13.1.0",
     "eslint-plugin-import": "^2.14.0"
