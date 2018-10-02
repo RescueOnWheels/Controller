@@ -4,13 +4,15 @@
   "description": "Easy input events from your Steam Controller for Mac, Windows, and Linux.",
   "main": "index.js",
   "directories": {
+    "example": "example",
     "lib": "lib",
     "test": "test"
   },
   "scripts": {
-    "lint": "eslint . --fix",
-    "test": "cross-env DEBUG=* node test/all.js",
-    "precommit": "npm run lint"
+    "lint": "eslint .",
+    "lint-fix": "eslint . --fix",
+    "precommit": "npm run lint",
+    "test": "cross-env DEBUG=* node test/all.js"
   },
   "repository": {
     "type": "git",
