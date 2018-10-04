@@ -13,7 +13,7 @@ controller.on('error', (err) => {
    * Error code 404 is only thrown if the Steam Controller is not found;
    * Ignoring the error message because we know what it will be.
    */
-  if (err.code !== 404) {
+  if (err.code !== 'ERR_STEAM_CONTROLLER_NOT_FOUND') {
     console.log(err);
   }
 
@@ -102,8 +102,14 @@ presses.forEach((name) => {
 /**
  * Graceful shutdown of HID.
  */
-process.on('SIGINT', () => {
-  controller.disconnect();
+[
+  'SIGINT',
+  'SIGTERM',
+].forEach((event) => {
+  process.on(event, () => {
+    controller.disconnect();
+    process.exit(0);
+  });
 });
 
 connect();
