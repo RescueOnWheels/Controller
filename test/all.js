@@ -102,8 +102,15 @@ presses.forEach((name) => {
 /**
  * Graceful shutdown of HID.
  */
-process.on('SIGINT', () => {
-  controller.disconnect();
+
+[
+  'SIGINT',
+  'SIGTERM',
+].forEach((event) => {
+  process.on(event, () => {
+    controller.disconnect();
+    process.exit(0);
+  });
 });
 
 connect();
