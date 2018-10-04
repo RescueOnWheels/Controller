@@ -9,10 +9,10 @@
     "test": "test"
   },
   "scripts": {
+    "dev": "cross-env NODE_ENV=development DEBUG=\"RRS:*\" npm test",
     "lint": "eslint .",
     "lint-fix": "eslint . --fix",
-    "precommit": "npm run lint",
-    "test": "cross-env DEBUG=* node test/all.js"
+    "test": "node test/all.js"
   },
   "repository": {
     "type": "git",
