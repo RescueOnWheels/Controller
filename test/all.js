@@ -102,7 +102,6 @@ presses.forEach((name) => {
 /**
  * Graceful shutdown of HID.
  */
-
 [
   'SIGINT',
   'SIGTERM',
