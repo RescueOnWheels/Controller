@@ -9,10 +9,10 @@
     "test": "test"
   },
   "scripts": {
-    "dev": "cross-env NODE_ENV=development DEBUG=\"RRS:*\" npm test",
+    "dev": "cross-env NODE_ENV=development DEBUG=RRS:* npm test",
     "lint": "eslint .",
     "lint-fix": "eslint . --fix",
-    "test": "node test/all.js"
+    "test": "node ./test/all.js"
   },
   "repository": {
     "type": "git",
@@ -25,7 +25,7 @@
   },
   "homepage": "https://github.com/RescueOnWheels/Controller#readme",
   "dependencies": {
-    "debug": "4.0.1",
+    "debug": "3.1.0",
     "node-hid": "0.7.3"
   },
   "devDependencies": {
