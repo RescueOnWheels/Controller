@@ -1,12 +1,11 @@
-/**
- * node-steam-controller
- * @author Wes Thom
- * @license MIT
- */
+/* Dependencies */
+const isRoot = require('is-root');
 
-/**
- * Controller
- * @author RescueOnWheels
- * @license MIT
- */
+/* Require elevated permission */
+if (!isRoot()) {
+  // eslint-disable-next-line no-console
+  console.error('You are not allowed to run this app with root permissions.');
+  process.exit(1);
+}
+
 module.exports = require('./lib/controller');

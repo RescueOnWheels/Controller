@@ -3,15 +3,23 @@
   "version": "1.0.0",
   "description": "Easy input events from your Steam Controller for Mac, Windows, and Linux.",
   "main": "index.js",
-  "directories": {
-    "example": "example",
-    "lib": "lib",
-    "test": "test"
+  "dependencies": {
+    "debug": "3.1.0",
+    "if-env": "1.0.4",
+    "is-root": "2.0.0",
+    "node-hid": "0.7.3"
+  },
+  "devDependencies": {
+    "cross-env": "5.2.0",
+    "eslint": "5.8.0",
+    "eslint-config-airbnb-base": "13.1.0",
+    "eslint-plugin-import": "2.14.0"
   },
   "scripts": {
     "dev": "cross-env NODE_ENV=development DEBUG=RRS:* npm test",
-    "lint": "eslint .",
-    "lint-fix": "eslint . --fix",
+    "lint": "if-env NODE_ENV=CI && npm run lint: || npm run lint:fix",
+    "lint:": "eslint .",
+    "lint:fix": "eslint . --fix",
     "test": "node ./test/all.js"
   },
   "repository": {
@@ -24,14 +32,9 @@
     "url": "https://github.com/RescueOnWheels/Controller/issues"
   },
   "homepage": "https://github.com/RescueOnWheels/Controller#readme",
-  "dependencies": {
-    "debug": "3.1.0",
-    "node-hid": "0.7.3"
-  },
-  "devDependencies": {
-    "cross-env": "5.2.0",
-    "eslint": "5.8.0",
-    "eslint-config-airbnb-base": "13.1.0",
-    "eslint-plugin-import": "2.14.0"
+  "directories": {
+    "example": "example",
+    "lib": "lib",
+    "test": "test"
   }
 }
