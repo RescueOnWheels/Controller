@@ -7,7 +7,7 @@
     "debug": "3.1.0",
     "if-env": "1.0.4",
     "is-root": "2.0.0",
-    "node-hid": "0.7.4"
+    "node-hid": "0.7.6"
   },
   "devDependencies": {
     "cross-env": "5.2.0",
